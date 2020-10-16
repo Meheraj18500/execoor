@@ -1,0 +1,172 @@
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+  #header-section .header-content .mobile-display {
+    display: none;
+  }
+  #header-section .header-content .main-nav {
+    display: none;
+  }
+  #header-section .header-content .mobile-content {
+    display: block;
+  }
+  #header-section .header-bottom {
+    height: 85vh;
+    padding: 80px 0 80px 0;
+  }
+  #header-section .header-bottom .left-content {
+    text-align: center;
+  }
+  #header-section .header-bottom .left-content h5 {
+    font-size: 15px;
+  }
+  #header-section .header-bottom .left-content h1 {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+  #header-section .header-bottom .right-content {
+    display: none;
+  }
+  #about-us .m-top {
+    margin-top: 0;
+  }
+  #about-us .m-top .card {
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  #about-us .m-top .card:hover {
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+  }
+  #our-services .mt {
+    margin-top: 0;
+  }
+  #our-services .card {
+    margin: 15px 0;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  }
+  #our-services .card:hover {
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  }
+  #contact-us .right-contact {
+    margin-top: 20px;
+  }
+  #contact-us .right-contact input[type="text"],
+  #contact-us .right-contact input[type="email"],
+  #contact-us .right-contact textarea {
+    margin: 10px 0;
+  }
+  #animation-video .content h3 {
+    font-size: 22px;
+  }
+  #animation-video .content table .table-row {
+    display: none;
+  }
+  #animation-video .content table .mobile-content {
+    display: block;
+  }
+  #animation-video .content table .mobile-content td {
+    padding: 10px;
+  }
+  #animation-video .content table .mobile-content td img {
+    max-width: 70px;
+    margin: 0 18px;
+    width: 100%;
+  }
+  #animation-video .content table .mobile-content .bl-1 {
+    border-left: 1.5px solid #03eeff;
+  }
+  #benefits img {
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  #our-experience .counter-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: inherit;
+  }
+  #our-experience .counter-box .box {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  #our-experience .counter-box .box .icon {
+    background: #084b69;
+  }
+  #our-experience .counter-box .box .icon i {
+    background: #084b69;
+    color: #ffffff;
+  }
+  #our-experience .counter-box .box .titel {
+    text-align: center;
+    margin-top: 15px;
+    padding-left: 0;
+  }
+  #our-experience .counter-box .box .titel h5 {
+    font-size: 22px;
+    color: #ffffff;
+    opacity: 0.9;
+  }
+  #our-experience .counter-box .box .titel .counter {
+    color: #05e6f1;
+  }
+  #our-experience .counter-box .box .titel .add {
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  #our-team .team .card {
+    position: static;
+    padding-bottom: 0;
+    margin: 10px 0;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  #our-team .team .card .caption {
+    position: static;
+  }
+  #our-team .team .card:first-child {
+    margin-top: 50px;
+  }
+  #our-team .team .card:hover .caption {
+    top: 100%;
+  }
+  #end-the-web .col-md-9 {
+    display: none;
+  }
+  #end-the-web .col-12 {
+    text-align: center;
+    display: block;
+  }
+  #end-the-web .mobile-content {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about-us .m-top .col-12 {
+    text-align: center;
+  }
+  #about-us .m-top .col-12 .card {
+    margin: 10px auto;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

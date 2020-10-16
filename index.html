@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon-icon.png" type="image/x-icon">
     <!--Googl fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!--bootsrtap min css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--fontawesome icons css-->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
     <!--themify icons css-->
     <link rel="stylesheet" href="css/themify-icons.css">
-    <!--lineicons icons css-->
-    <link rel="stylesheet" href="css/LineIcons.css">
     <!--main css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--responisve css-->
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Execoor</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
     <section id="header-section">
         <!--Nav start-->
         <div class="header-content">
-            <div class="container">
+            <div class="container mobile-display">
                 <div class="top-header d-flex flex-row py-4">
                     <div class="left-content">
                         <img src="img/logo.png" alt="web-logo">
@@ -42,20 +42,36 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom-header">
+            <div class="main-nav">
                 <div class="container">
                     <nav class="navber navbar-expand-md">
                         <div>
                             <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item"><a href="#" class="nav-link">home</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">pages</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">projects</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">contacts</a></li>
+                                <li class="nav-item"><a href="#header-section" class="nav-link">home</a></li>
+                                <li class="nav-item"><a href="#about-us" class="nav-link">about us</a></li>
+                                <li class="nav-item"><a href="#our-services" class="nav-link">servises</a></li>
+                                <li class="nav-item"><a href="#our-team" class="nav-link">team</a></li>
+                                <li class="nav-item"><a href="#contact-us" class="nav-link">contact us</a></li>
                                 <li class="nav-item ml-auto text-capitalize"><span class="contact"><strong>contact us :</strong> +8801633012992</span></li>
                             </ul>
                         </div>
                     </nav>
+                </div>
+            </div>
+            <div class="mobile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="navber-brand">
+                                <img src="img/mobil-icon.png" alt="v" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class="navbar-toggler">
+                                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,7 +88,7 @@
                         <a href="#"><button class="btn-1">about us</button></a>
                         <a href="#"><button class="btn-2">free trial</button></a>
                     </div>
-                    <div class="col-5 right-content">
+                    <div class="col-md-5 right-content">
                         <img src="img/man-3.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -83,28 +99,28 @@
     <section id="about-us">
         <div class="container">
             <div class="row m-top">
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-md-3 col-sm-6 col-12 mb-md-1 mb-3">
                     <div class="card">
                         <div class="icon"><img src="img/card-icon-1.png" alt="icon"></div>
                         <h4>Smart softwares</h4>
                         <p>Duis aute irure dolor in repreherita ineto.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-md-3 col-sm-6 col-12 mb-md-1 mb-3">
                     <div class="card">
                         <div class="icon"><img src="img/card-icon-2.png" alt="icon"></div>
                         <h4>Smart softwares</h4>
                         <p>Duis aute irure dolor in repreherita ineto.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-md-3 col-sm-6 col-12 mb-md-1 mb-3">
                     <div class="card">
                         <div class="icon"><img src="img/card-icon-4.png" alt="icon"></div>
                         <h4>Smart softwares</h4>
                         <p>Duis aute irure dolor in repreherita ineto.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
+                <div class="col-md-3 col-sm-6 col-12 mb-md-1 mb-3">
                     <div class="card">
                         <div class="icon"><img src="img/card-icon-3.png" alt="icon"></div>
                         <h4>Smart softwares</h4>
@@ -113,10 +129,11 @@
                 </div>
             </div>
             <div class="row bottom-content">
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 mb-md-0 mb-5">
                     <a href="#">
                         <img src="img/image-9.jpg" class="img-fluid" alt="a-image">
                         <span>Meheraj hossain</span>
+                        <i class="fas fa-play"></i>
                     </a>
                 </div>
                 <div class="col-md-6 col-12 left-content">
@@ -311,16 +328,16 @@
                 <div class="col-md-6 col-12 right-contact">
                     <form action="post">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <input type="text" placeholder="Name" required>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
                                 <input type="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 mt-5">
-                                <textarea class=""cols="10" placeholder="Send message" required></textarea>
+                            <div class="col-12 mt-md-5">
+                                <textarea cols="10" placeholder="Send message" required></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -347,20 +364,26 @@
                     </div>
                 </div>
                 <div class="row justify-content-center align-item-center">
-                    <div class="col-9 text-center py-5">
+                    <div class="col-md-9 col-12 text-center py-5">
                         <h3>Find a evolved and strong connection with software and hardware communication </h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <table>
-                            <tr>
+                            <tr class="table-row">
                                 <td><img src="img/logo-1.png" class="img-fluid" alt=""></td>
                                 <td class="bl-1"><img src="img/logo-6.png" class="img-fluid" alt=""></td>
                                 <td class="bl-1"><img src="img/logo-5.png" class="img-fluid" alt=""></td>
                                 <td class="bl-1"><img src="img/logo-4.png" class="img-fluid" alt=""></td>
                                 <td class="bl-1"><img src="img/logo-3.png" class="img-fluid" alt=""></td>
                                 <td class="bl-1"><img src="img/logo-2.png" class="img-fluid" alt=""></td>
+                            </tr>
+                            <tr class="mobile-content">
+                                <td><img src="img/logo-1.png" class="img-fluid" alt=""></td>
+                                <td class="bl-1"><img src="img/logo-6.png" class="img-fluid" alt=""></td>
+                                <td class="bl-1"><img src="img/logo-5.png" class="img-fluid" alt=""></td>
+                                <td class="bl-1"><img src="img/logo-4.png" class="img-fluid" alt=""></td>
                             </tr>
                         </table>
                     </div>
@@ -380,7 +403,8 @@
             <div class="row">
                 <div class="col-md-4 col-12 feedback">
                     <div class="description">
-                        <p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p>
+                        <div class="text"><p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p></div>
+                        <div class="left-color"></div>
                     </div>
                     <div class="profile d-flex flex-row">
                         <div class="icon">
@@ -394,7 +418,8 @@
                 </div>
                 <div class="col-md-4 col-12 feedback">
                     <div class="description">
-                        <p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p>
+                        <div class="text"><p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p></div>
+                        <div class="left-color"></div>
                     </div>
                     <div class="profile d-flex flex-row">
                         <div class="icon">
@@ -408,7 +433,8 @@
                 </div>
                 <div class="col-md-4 col-12 feedback">
                     <div class="description">
-                        <p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p>
+                        <div class="text"><p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perferendis quia, nesciunt similique eos tenetur.</p></div>
+                        <div class="left-color"></div>
                     </div>
                     <div class="profile d-flex flex-row">
                         <div class="icon">
@@ -424,7 +450,7 @@
         </div>
     </section>
     <!----------------------------Benefits Section---------------------------->
-    <section id="benefits" class="ptb-100">
+    <section id="benefits" class="pt-100">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12">
@@ -460,55 +486,217 @@
             </div>
         </div>
     </section>
-    <!----------------------------Our Team---------------------------->
-    <section id="our-team" class="ptb-100">
+    <!----------------------------Our Exprience---------------------------->
+    <section id="our-experience" class="ptb-100">
         <div class="container">
             <div class="row">
-                <div class="col-12 counter d-flex flex-row">
-                    <div class="countries box d-flex flex-row">
-                        <div class="icon"><i class="fas fa-globe-europe"></i></div>
-                        <div>
-                            <h5 class="text-uppercase">countries</h5>
-                            <h3 class="count-number">40<span>+</span></h3>
+                <div class="col-12">
+                    <div class="counter-box">
+                        <div class="countries box">
+                            <div class="icon"><i class="fas fa-globe-europe"></i></div>
+                            <div class="titel">
+                                <h5 class="text-uppercase">countries</h5>
+                                <div>
+                                    <span class="counter">16</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="projects box d-flex flex-row">
-                        <div class="icon"><i class="fas fa-project-diagram"></i></div>
-                        <div>
-                            <h5 class="text-uppercase">projects</h5>
-                            <h3 class="count-number">40<span>+</span></h3>
+                        <div class="projects box">
+                            <div class="icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="titel">
+                                <h5 class="text-uppercase">projects</h5>
+                                <div>
+                                    <span class="counter">1200</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="clients box d-flex flex-row">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
-                        <div>
-                            <h5 class="text-uppercase">clients</h5>
-                            <h3 class="count-number">40<span>+</span></h3>
+                        <div class="clients box">
+                            <div class="icon"><i class="fas fa-user-alt"></i></div>
+                            <div class="titel">
+                                <h5 class="text-uppercase">clients</h5>
+                                <div>
+                                    <span class="counter">178</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="team-members box d-flex flex-row">
-                        <div class="icon"><i class="fas fa-users"></i></div>
-                        <div>
-                            <h5 class="text-uppercase">team members</h5>
-                            <h3 class="count-number">40<span>+</span></h3>
+                        <div class="team-members box">
+                            <div class="icon"><i class="fas fa-users"></i></div>
+                            <div class="titel">
+                                <h5 class="text-uppercase">team members</h5>
+                                <div>
+                                    <span class="counter">46</span>
+                                    <span class="add">+</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!----------------------------Our Team---------------------------->
+    <section id="our-team" class="ptb-100">
+        <div class="container">
+            <div class="row team">
+                <div class="col-md-3 col-12">
+                    <h5>Our Team</h5>
+                    <h2>The big family</h2>
+                    <p class="little-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis fugit sit! Reiciendis.</p>
+                    <a href="#">
+                        <span>View the team</span>
+                        <i class="ti-angle-right"></i>
+                    </a>
+                </div>
+                <div class="col-md-9 col-12">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <img src="img/user-3.jpg" class="img-fluid" alt="user">
+                                <div class="caption text-center">
+                                    <h4>Meheraj Hossain</h4>
+                                    <span>Developer</span>
+                                    <span class="social-link">
+                                        <a href="https://www.facebook.com/mdmaraj185/" target="_blank"><i class="ti-facebook"></i></a>
+                                        <a href="https://dribbble.com/meheraj185" target="_blank"><i class="ti-dribbble"></i></a>
+                                        <a href="https://www.instagram.com/meheraj1850/" target="_blank"><i class="ti-instagram"></i></a>
+                                    </span>
+                                    <p class="little-description">Lorem ipsum dolor amet sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <img src="img/user-1.jpg" class="img-fluid" alt="user">
+                                <div class="caption text-center">
+                                    <h4>Meheraj Hossain</h4>
+                                    <span>Developer</span>
+                                    <span class="social-link">
+                                        <a href="https://www.facebook.com/mdmaraj185/" target="_blank"><i class="ti-facebook"></i></a>
+                                        <a href="https://dribbble.com/meheraj185" target="_blank"><i class="ti-dribbble"></i></a>
+                                        <a href="https://www.instagram.com/meheraj1850/" target="_blank"><i class="ti-instagram"></i></a>
+                                    </span>
+                                    <p class="little-description">Lorem ipsum dolor amet sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div class="card">
+                                <img src="img/user-9.jpg" class="img-fluid" alt="user">
+                                <div class="caption text-center">
+                                    <h4>Meheraj Hossain</h4>
+                                    <span>Developer</span>
+                                    <span class="social-link">
+                                        <a href="https://www.facebook.com/mdmaraj185/" target="_blank"><i class="ti-facebook"></i></a>
+                                        <a href="https://dribbble.com/meheraj185" target="_blank"><i class="ti-dribbble"></i></a>
+                                        <a href="https://www.instagram.com/meheraj1850/" target="_blank"><i class="ti-instagram"></i></a>
+                                    </span>
+                                    <p class="little-description">Lorem ipsum dolor amet sit amet consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------Footer Section---------------------------->
+    <footer id="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 left">
+                    <h2>Execoore</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, dolore minus.</p>
+                    <ul class="social-link">
+                        <li><a href="https://www.facebook.com/mdmaraj185/" class="facebook" target="_blank"><i class="ti-facebook"></i></a></li>
+                        <li><a href="https://dribbble.com/meheraj185" class="dribbble" target="_blank"><i class="ti-dribbble"></i></a></li>
+                        <li><a href="https://www.instagram.com/meheraj1850/" class="instagram" target="_blank"><i class="ti-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCjrPQu8vlJXe8Z9OyYBZgnA?view_as=subscriber" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12 middle">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><span>Partners and advertising</span></li>
+                        <li><span>About us and the company</span></li>
+                        <li><span>Services and projects</span></li>
+                        <li><span>Contact us online</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12 right">
+                    <ul>
+                        <li>
+                            <p class="titel">Address</p>
+                            <hr>
+                            <p class="description">139 spanaker, Bangladesh</p>
+                        </li>
+                        <li>
+                            <p class="titel">Email</p>
+                            <hr>
+                            <p class="description">mdmeheraj185@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="titel">Phone</p>
+                            <hr>
+                            <p class="description">+8801633012992</p>
+                        </li>
+                        <li>
+                            <p class="titel">Opening hours</p>
+                            <hr>
+                            <p class="description">2pm-7pm Any time</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="end-the-web">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <p class="mb-0">&copy; 2019 Execoore - Technology And Business Template Handmade by schiocco.com.</p>
+                </div>
+                <div class="col-md-3 col-12">
+                    <span>Developer</span>
+                    <span class="name">Meheraj</span>
+                </div>
+                <div class="col-12 mobile-content">
+                    <p class="mb-0">&copy; 2019 Execoore - Technology</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    
 
     <!--bootstrap min js-->
     <script src="js/bootstrap.min.js"></script>
     <!--fontwesome icons cdn-->
     <script src="https://kit.fontawesome.com/32c332ccd9.js" crossorigin="anonymous"></script>
-    <!--fontwesome icons js-->
-    <script src="js/fontawesome.min.js"></script>
-    <!--main js-->
-    <script src="js/main.js"></script>
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!--waypoints cdn-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!--counter up js-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--jquery-->
+    <script type="text/javascript">
+
+        window.addEventListener('scroll', () => {
+            
+            var scrolled = window.scrollY;
+
+            console.log(scrolled);
+
+        });
+    
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1500
+        });
+    </script>
+
 
 </body>
 </html>
